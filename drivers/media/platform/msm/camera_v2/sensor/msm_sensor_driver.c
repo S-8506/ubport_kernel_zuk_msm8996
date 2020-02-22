@@ -727,7 +727,7 @@ int32_t msm_sensor_driver_probe(void *setting,
 			goto free_slave_info;
 		}
 	}
-
+// @ littleboy
 /* XMADD for distinguish module vendor */
 	if (strcmp(slave_info->eeprom_name, "ov4688") == 0) {
 		gemini_get_front_sensor_name(gemini_front_sensor_name);
@@ -817,6 +817,7 @@ int32_t msm_sensor_driver_probe(void *setting,
 		}
 	}
 
+// @littleboy
 	if (strlen(slave_info->sensor_name) >= MAX_SENSOR_NAME ||
 		strlen(slave_info->eeprom_name) >= MAX_SENSOR_NAME ||
 		strlen(slave_info->actuator_name) >= MAX_SENSOR_NAME ||
